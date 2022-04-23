@@ -12,8 +12,8 @@ jobs:
         pwd
         ls
     - name : checkout
-      run : actions/checkout@v2
-    - name : after checkou
+      uses : actions/checkout@v2
+    - name : after checkout
       run : |
         pwd
         ls
