@@ -7,5 +7,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: pwd
-    - run: ls
+    - name : before checkout
+      run : |
+        pwd
+        ls
+    - name : checkout
+      run : actions/checkout@v2
+    - name : after checkou
+      run : |
+        pwd
+        ls
